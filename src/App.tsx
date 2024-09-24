@@ -14,7 +14,7 @@ function App() {
         <NavBar />
         <Home />
       </div>
-      <div className='mx-auto max-w-screen-lg flex flex-col items-center gap-4'>
+      <div className='mx-auto max-w-screen-lg flex flex-col items-center gap-8'>
         <AboutMe />
         <Projects />
         <Skills />
