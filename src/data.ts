@@ -60,18 +60,18 @@ export const project = [
 export const experience = [
   {
     id: 1,
-    type:'work.svg',
+    type:'work',
     name: "Forescribe",
     postion: "Backend Developer Intern",
     location:"Gurgaon",
     time: "May 2024-August 2024",
     description: ["Enhanced the main application by integrating key services like Slack, Jira, and QuickBooks, using OAuth achieving notable improvements in system performance, latency reduction, and overall application efficiency"],
     tech:["NestJs", "MongoDB", "Prisma"],
-    link:"",
+    link:"https://drive.google.com/file/d/1lYEhg0nFgz3wp3RXypq0rBAumksM6-Pj/view?usp=sharing",
   },
   {
     id: 2,
-    type:'work.svg',
+    type:'work',
     name: "Maximl",
     postion: "Backend Developer Intern",
     location:"Bangalore",
@@ -84,7 +84,7 @@ export const experience = [
   },
   {
     id: 3,
-    type:'work.svg',
+    type:'work',
     name: "Xperia3D",
     postion: "FullStack Developer Intern",
     location:"Delhi",
@@ -93,11 +93,11 @@ export const experience = [
         // "Designed and Developed Main Website, Dashboard, In-house App from scratch."
       ],
     tech:["NextJs", "Redux-toolkit", "ExpressJs", "MongoDB", "AWS"],
-    link:"",
+    link:"https://drive.google.com/file/d/1JIjTtFsR55dlzqc-opNIXZDy1jLyS1Et/view?usp=sharing",
   },
   {
     id: 4,
-    type:'hat.svg',
+    type:'edu',
     name: "Indian Institute of Information Technology, Kottayam",
     postion: "Bachelor of Technology, CSE",
     location:"Kottayam, Kerala",
