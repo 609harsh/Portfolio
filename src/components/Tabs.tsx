@@ -9,7 +9,7 @@ const Tabs = () => {
 
   return (
     <div className="flex flex-col items-start">
-      <div className="flex w-full flex-col md:flex-row">
+      <div className="flex w-full flex-col md:flex-row mb-5">
         {/* Tab Buttons */}
         <div className="tab w-full md:w-1/3 border border-gray-300 bg-gray-100">
           <button

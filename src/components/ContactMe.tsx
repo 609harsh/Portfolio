@@ -2,8 +2,8 @@ import Input from "./input"
 
 const ContactMe = () => {
   return (
-    <div id="contact" className="w-full rounded-md shadow-md">
-      <p className="font-bold text-2xl p-3 text-center">CONTACT ME</p>
+    <section id="contact" className="w-full rounded-md shadow-md mb-32">
+      <h1 className="text-center font-bold text-3xl sticky top-0 bg-gray-50 z-20 p-4 mb-3 font-prozo">Contact Me</h1>
       <div className=" w-full mx-auto py-4 px-2">
         <div className="flex flex-col md:flex-row gap-4 ">
           <div className="flex flex-col gap-3 md:w-1/2 items-center justify-center"> 
@@ -37,7 +37,7 @@ const ContactMe = () => {
         </div>
       </div>
       
-    </div>
+    </section>
   )
 }
 

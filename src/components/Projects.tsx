@@ -2,8 +2,8 @@ import { project } from "../data"
 
 const Projects = () => {
   return (
-    <div id="projects" className="w-full relative">
-      <h1 className="text-center font-bold text-3xl sticky top-0 bg-white z-10 p-4">Projects</h1>
+    <section id="projects" className="w-full relative ">
+      <h1 className="text-center font-bold text-3xl sticky top-0 bg-gray-50 z-10 p-4 font-prozo">Projects</h1>
       <div className="flex flex-col gap-2 mx-1">
         {
           project.map(p => (
@@ -12,14 +12,14 @@ const Projects = () => {
                   <img src={p.img} className="group-hover:scale-110 h-full max-w-full transform  w-full transition-all duration-300 block object-fit outline-none rounded-md shadow-lg aspect-video "/>
                 </div>
                 <div className="md:w-2/5 flex flex-col gap-1 md:gap-4 md:mt-8">
-                  <h1 className="font-bold text-2xl text-center">
+                  <h1 className="font-bold text-2xl text-center font-poppins">
                     {p.name}
                   </h1>
-                <p className="text-center mt-2">{p.description}</p>
+                <p className="text-center mt-2 font-baloo">{p.description}</p>
                 <p className="inline-flex flex-wrap gap-2 mt-4 justify-center">
                   {
                     p.tech.map((val, idx) => (
-                      <span key={idx} className="bg-blue-100 rounded-3xl px-2 py-2 text-sm font-semibold font-Baloo text-blue-900 cursor-pointer hover:bg-blue-200 transition-colors duration-200 ease-in">{val}</span>
+                      <span key={idx} className="font-poppins bg-blue-100 rounded-3xl px-2 py-2 text-sm font-semibold font-Baloo text-blue-900 cursor-pointer hover:bg-blue-200 transition-colors duration-200 ease-in">{val}</span>
                     ))
                   }                  
                 </p>
@@ -41,7 +41,7 @@ const Projects = () => {
         }
       </div>
 
-    </div>
+    </section>
   )
 }
 
