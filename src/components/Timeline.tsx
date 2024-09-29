@@ -2,10 +2,6 @@ import React from "react";
 import { experience } from "../data";
 
 
-const imgType = {
-  'work': 'work.svg',
-  'edu':'hat.svg'
-}
 
 const Timeline: React.FC = () => {
   return (

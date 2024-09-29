@@ -1,6 +1,6 @@
 
 import { useRef,useEffect } from "react";
-import {  motion, sync, useCycle } from "framer-motion";
+import { motion, useCycle } from "framer-motion";
 
   
 
@@ -58,7 +58,7 @@ const itemIds = [
   {id:4,name:"CONTACT",link:"#contact"},
 ];
   
-  const Path = props => (
+  const Path = (props:any) => (
   <motion.path
     fill="transparent"
     strokeWidth="3"
@@ -67,7 +67,7 @@ const itemIds = [
     {...props}
   />
 );
-const MenuToggle = ({ toggle }) => (
+const MenuToggle = ({ toggle }:{toggle:any}) => (
     <button onClick={toggle} className="outline-none border-none cursor-pointer absolute top-5 left-7 w-12 h-12 rounded-full bg-transparent">
       <svg width="23" height="23" viewBox="0 0 23 23">
         <Path
@@ -95,7 +95,7 @@ const MenuToggle = ({ toggle }) => (
   );
 
 
-const MenuItem = ({ i }) => {
+const MenuItem = ({ i }:{i:any}) => {
   const colors = ["#FF008C", "#D309E1", "#9C1AFF", "#7700FF", "#4400FF"];
   return (
     <motion.li
