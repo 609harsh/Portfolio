@@ -2,7 +2,7 @@
 
 const AboutMe = () => {
   return (
-    <section id="aboutme ">
+    <section id="aboutme">
       <h1 className="text-center font-bold text-3xl sticky top-0 bg-gray-50 z-10 p-4 font-prozo mt-6">About Me</h1>
       <div className="flex flex-col md:flex-row w-full">
         <div className="w-full md:w-2/5 p-7">

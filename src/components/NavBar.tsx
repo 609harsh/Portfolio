@@ -52,10 +52,11 @@ import { motion, useCycle } from "framer-motion";
 
 const itemIds = [
   {id:0,name:"HOME",link:"#home"},
-  {id:1,name:"ABOUT ME",link:"#aboutme"},
-  {id:2,name:"PROJECTS",link:"#projects"},
-  {id:3,name:"SKILLS",link:"#skills"},
-  {id:4,name:"CONTACT",link:"#contact"},
+  { id: 1, name: "ABOUT ME", link: "#aboutme" },
+  {id:2, name:"WORK", link:"#work"},
+  {id:3,name:"PROJECTS",link:"#projects"},
+  {id:4,name:"SKILLS",link:"#skills"},
+  {id:5,name:"CONTACT",link:"#contact"},
 ];
   
   const Path = (props:any) => (
@@ -96,7 +97,7 @@ const MenuToggle = ({ toggle }:{toggle:any}) => (
 
 
 const MenuItem = ({ i }:{i:any}) => {
-  const colors = ["#FF008C", "#D309E1", "#9C1AFF", "#7700FF", "#4400FF"];
+  const colors = ["#FF008C", "#D309E1", "#9C1AFF", "#7700FF", "#4400FF","#1100ff"];
   return (
     <motion.li
       variants={variantsItem}
@@ -146,7 +147,7 @@ const NavBar = () => {
       animate={isOpen ? "open" : "closed"}
       custom={height}
       ref={containerRef}
-      className="absolute top-0 left-0 bottom-0 w-[300px] z-10"
+      className="absolute top-0 left-0 bottom-0 w-[300px] z-20 "
     >
       <motion.div className="absolute top-0 left-0 bottom-0 w-[300px] bg-white" variants={sidebar}>
         <Navigation isOpen={isOpen} />
