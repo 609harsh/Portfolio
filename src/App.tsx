@@ -1,5 +1,6 @@
 
 import AboutMe from './components/AboutMe'
+import Achievements from './components/Achievements'
 import ContactMe from './components/ContactMe'
 import Home from './components/Home'
 import NavBar from './components/NavBar'
@@ -20,6 +21,7 @@ function App() {
         <Timeline/>
         <Projects />
         <Skills />
+        {/* <Achievements/> */}
         <ContactMe />
       </div>
     </div>

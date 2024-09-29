@@ -60,7 +60,7 @@ const Home = () => {
         </motion.h2>
         <motion.h1
           variants={textVariants}
-          className="text-4xl md:text-6xl 2xl:text-8xl capitalize text-gray-200 font-serif"
+          className="text-4xl md:text-6xl 2xl:text-8xl capitalize text-gray-200 font-RobotoMono"
         >
           Full Stack Developer
         </motion.h1>
