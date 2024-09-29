@@ -2,6 +2,12 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    fontFamily: {
+      poppins: '"Poppins", sans-serif',
+      baloo: '"Baloo 2", cursive',
+      RobotoMono: "'Roboto Mono', monospace",
+      prozo: '"Proza Libre", sans-serif',
+    },
     extend: {
       animation: {
         "infinite-scroll": "infinite-scroll 25s linear infinite",
