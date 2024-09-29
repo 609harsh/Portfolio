@@ -55,3 +55,57 @@ export const project = [
   }
 ]
 
+
+
+export const experience = [
+  {
+    id: 1,
+    type:'work.svg',
+    name: "Forescribe",
+    postion: "Backend Developer Intern",
+    location:"Gurgaon",
+    time: "May 2024-August 2024",
+    description: ["Enhanced the main application by integrating key services like Slack, Jira, and QuickBooks, using OAuth achieving notable improvements in system performance, latency reduction, and overall application efficiency"],
+    tech:["NestJs", "MongoDB", "Prisma"],
+    link:"",
+  },
+  {
+    id: 2,
+    type:'work.svg',
+    name: "Maximl",
+    postion: "Backend Developer Intern",
+    location:"Bangalore",
+    time: "Jan 2024-April 2024",
+    description: ["Spearheaded the development of a Low-code development platform, achieving a remarkable 20% increase in productivity and cost reduction by leveraging innovative solutions",
+      // "Implemented crucial endpoints for authentication, authorization, CRUD operations for application ensuring seamless functionality and user experience."
+    ],
+    tech:[ "NestJS", "PostgreSQL", "TypeORM"],
+    link:"",
+  },
+  {
+    id: 3,
+    type:'work.svg',
+    name: "Xperia3D",
+    postion: "FullStack Developer Intern",
+    location:"Delhi",
+    time: "Jan 2023-March 2023",
+      description: ["Worked on creating a Website for Augmented Reality Solutions to enhance the customer engagement",
+        // "Designed and Developed Main Website, Dashboard, In-house App from scratch."
+      ],
+    tech:["NextJs", "Redux-toolkit", "ExpressJs", "MongoDB", "AWS"],
+    link:"",
+  },
+  {
+    id: 4,
+    type:'hat.svg',
+    name: "Indian Institute of Information Technology, Kottayam",
+    postion: "Bachelor of Technology, CSE",
+    location:"Kottayam, Kerala",
+    time: "Dec 2020-May 2024",
+      description: ["Graduated in Computer Science Engineering with 8.72 c.g.p.a.",
+        // "Designed and Developed Main Website, Dashboard, In-house App from scratch."
+      ],
+    tech:[],
+    link:"",
+  }
+]
