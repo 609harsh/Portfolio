@@ -30,7 +30,7 @@ const Timeline: React.FC = () => {
                       ))
                     }
                     
-                    { i.tech.length>0 && (<li><span className="font-bold">Tech Stack</span> - {i.tech.join(" ")}</li>)}
+                    { i.tech.length>0 && (<li><span className="font-bold">Tech Stack</span> - {i.tech.join(",")}</li>)}
                   </ul>
                 </div>
                 {/* <span>Timeline </span> */}
@@ -54,7 +54,7 @@ const Timeline: React.FC = () => {
                           <li>{item}</li>
                         ))
                       }
-                      { i.tech.length>0 && (<li><span className="font-bold">Tech Stack</span> - {i.tech.join(" ")}</li>)}
+                      { i.tech.length>0 && (<li><span className="font-bold">Tech Stack</span> - {i.tech.join(",")}</li>)}
                     </ul>
                   </div>
                 </div>

@@ -13,7 +13,7 @@ const AboutMe = () => {
             Hi👋, I am <a className="font-semibold inline" href="https://bento.me/hrh" target="_blank">Harsh Gupta</a>. I graduated from <span className="font-semibold">Indian Institute of Information Technology, Kottayam</span>.
             I'm a full-stack developer. I have passion for creating visually appealing, user-friendly,
             higly scalable web application. My focus is JavaScript, and core stack is <span className="font-semibold">React, Next.js, ExpressJS, Nestjs, Mongodb, Postgresql. </span>
-            I am currently open for <span className="font-semibold">Full Time postiton</span> as a Software Developer.
+            I am currently open for <span className="font-semibold">Full Time position</span> as a Software Developer.
           </p>
         </div>
       </div>

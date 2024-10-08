@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { resumeLink } from "../data";
 
 const textVariants = {
   initial: {
@@ -76,7 +77,7 @@ const Home = () => {
               Contact Me
             </motion.button>
           </a>
-          <a href="https://drive.google.com/file/d/1TjnabeqkeYaKmiZX0cDccMW96KA8EGbY/view" target="_blank">
+          <a href={resumeLink} target="_blank">
             <motion.button
               type="button"
               variants={textVariants}
@@ -85,7 +86,6 @@ const Home = () => {
               Resume
               <span className="inline-block align-text-bottom">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" /></svg>
-
               </span>
             </motion.button>
           </a>

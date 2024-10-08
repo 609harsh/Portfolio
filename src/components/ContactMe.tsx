@@ -1,22 +1,47 @@
+import { useState } from "react"
 import Input from "./input"
 
 const ContactMe = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [error, setError] = useState("");
+  const onsubmit = () => {
+    name.trim()
+    email.trim()
+    message.trim()
+    if (name === "" || email === "" || message === "") {
+      setError("*Name or Email or Message is missing");
+      return;
+    }
+    let email2=String(email).toLowerCase()
+    if(!email2.match(
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    )) {
+      setError("*Email Not valid");
+      return;
+    }
+    setName("")
+    setEmail("")
+    setMessage("")
+  }
   return (
     <section id="contact" className="w-full rounded-md shadow-md mb-32">
       <h1 className="text-center font-bold text-3xl sticky top-0 bg-gray-50 z-20 p-4 mb-3 font-prozo">Contact Me</h1>
       <div className=" w-full mx-auto py-4 px-2">
         <div className="flex flex-col md:flex-row gap-4 ">
           <div className="flex flex-col gap-3 md:w-1/2 items-center justify-center"> 
-            <Input labelName="Full Name" />
-            <Input labelName="Email" />
-            <Input labelName="Message" />
-            <a href="#_" className="relative px-5 py-2 font-medium text-white group w-1/2">
+            <Input labelName="Full Name" setData={setName} />
+            <Input labelName="Email" setData={setEmail} />
+            <Input labelName="Message" setData={ setMessage} />
+            <button type="submit" onClick={onsubmit} className="relative px-5 py-2 font-medium text-white group w-1/2">
               <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-purple-500 group-hover:bg-purple-700 group-hover:skew-x-12"></span>
               <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-purple-700 group-hover:bg-purple-500 group-hover:-skew-x-12"></span>
               <span className="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-purple-600 -rotate-12"></span>
               <span className="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-purple-400 -rotate-12"></span>
               <span className="relative">Contact Me</span>
-            </a>
+            </button>
+            <p className="text-red-500">{error}</p>
           </div>
           <div className="flex flex-col gap-6 justify-around m-auto md:w-1/2 ">
             <p>
